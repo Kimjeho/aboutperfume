@@ -1,0 +1,169 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', 'PT-Serif';
+}
+
+h1, h2, h3, h4, .logo-font {
+    font-family: 'PT-Serif', sans-serif;
+}
+
+/* 네비게이션 */
+
+@media (max-width: 991.98px) {
+    #logo {
+      margin-top: -80px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    #maindesign {
+      margin-top: -15px;
+    }
+}
+
+.navbar {
+    height: 80px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color : rgb(90, 90, 90) !important;
+    font-weight: bold;
+}
+
+@media (max-width: 991px) {
+    .nav-link.active,
+    .nav-link {
+        color: black !important;
+        font-weight: bold;
+        text-align: right;
+    }
+}
+/* 헤더 */
+#video {
+    position: relative;
+    margin-top: 50px;
+    z-index: -1;
+}
+
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 180px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* 메인 */
+table {
+    width: 70%; 
+    border-collapse: collapse; 
+}
+  
+table th, table td {
+    padding: 5px; 
+}
+
+
+/* info */
+
+#color li {
+    list-style-type: none;
+    padding: 0;
+}
+
+#black:hover {
+    color: white;
+    background-color: black;
+}
+#blackModalLabel {
+    color: black;
+}
+
+#orange:hover {
+    color: white;
+    background-color: orangered;
+}
+#orangeModalLabel {
+    color: orangered;
+}
+
+#blue:hover {
+    color: white;
+    background-color: blue;
+}
+#blueModalLabel {
+    color: blue;
+}
+
+#pink:hover {
+    color: white;
+    background-color: deeppink;
+}
+#pinkModalLabel {
+    color: deeppink;
+}
+
+#brown:hover {
+    color: white;
+    background-color: brown;
+}
+#brownModalLabel {
+    color: brown;
+}
+
+#violet:hover {
+    color: white;
+    background-color: purple;
+}
+#violetModalLabel {
+    color: purple;
+}
+
+#green:hover {
+    color: white;
+    background-color: green;
+}
+#greenModalLabel {
+    color: green;
+}
+
+#red:hover {
+    color: white;
+    background-color: red;
+}
+#redModalLabel {
+    color: red;
+}
+
+#grey:hover {
+    color: white;
+    background-color: gray;
+}
+#greyModalLabel {
+    color: gray;
+}
+
+#white:hover {
+    color: rgb(210, 210, 210);
+    background-color: white;
+}
+
+#whiteModalLabel { 
+    color: antiquewhite;
+}
+#yellow:hover {
+    color: rgb(255, 255, 255);
+    background-color: yellow;
+}
+#yellowModalLabel {
+    color: yellow;
+}

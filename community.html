@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <style>
+      .white-bg {
+        background-color: white;
+      }
+
+      .card-hover {
+          width: 350px; 
+          height: 350px; 
+      }
+
+      .perfume-info {
+        display: none; /* 기본적으로 숨김 */
+        position: relative; /* 위치를 조절하기 위해 절대 위치 지정 */
+        z-index: 2; 
+        bottom: 180px;
+      }
+
+      .perfume-modal-trigger:hover #info1 {
+        filter: blur(4px);
+      }
+
+      .perfume-modal-trigger:hover #info2 {
+        filter: blur(4px);
+      }
+
+      .perfume-modal-trigger:hover .perfume-info {
+        display: block;
+      }
+
+      @media (max-width: 576px) {
+        .row-cols-1 .col {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션 시작 -->
+    <nav class="navbar navbar-expand-lg narbar-light py-2">
+        <div class="container-fluid">
+            <div class="col-md-4 col-1 text-start mt-5">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.png" alt="logo" id="logo">
+                </a>
+            </div>
+            <div class="col-md-4 col-8 text-center mt-5">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/그림3.png" alt="name" class="img-fluid" id ="maindesign">
+                </a>
+            </div>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0 mt-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link members dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Member</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html">Log in</a></li>
+                            <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link community" href="community.html">Community</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 네비게이션 끝 -->
+
+    <!-- 메인 시작 -->
+    <div class="container py-5 mt-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="col text-center my-3">
+          <div class="card-hover shadow rounded p-3 perfume-modal-trigger">
+            <div id="info1">
+              <img src="./img/perfume2.PNG" alt="이미지 1" width="300" class="py-4">
+              <h4 class="fw-bold mt-3">향수의 지속력에 대한 이야기</h4>
+              <p>I&Perfume 시리즈 #1</p>
+            </div>
+            <div class="perfume-info fw-bold">
+              <p><button id="heartButton" class="btn btn-link text-danger"><i class="bi bi-heart"></i></button> : <span id="heartCount">183</span></p>
+              <p>review : 0</p>
+            </div>
+          </div>
+          <div class="modal fade" id="perfumeModal" tabindex="-1" role="dialog" aria-labelledby="perfumeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md modal-blog" role="document">
+              <div class="modal-content py-2">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-4 fw-bold" id="perfumeModalLabel">향수의 지속력?</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-5" style="overflow-y : auto;">
+                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner text-center justify-content-center align-items-center">
+                      <div class="carousel-item active d-flex align-items-center justify-content-center">
+                        <div class="p-3">
+                          <p>동일한 EDP인데 향수나 사람마다<br>느껴지는 지속력이 모두 달랐던 경험<br>있지 않으신가요?</p>
+                          <p>첫째로, 동일한 EDP인데<br>향수마다 지속력이 다르게 느껴지는 이유는<br><mark>사용된 원료 함량비</mark>에 있습니다.</p>
+                          <p>아래 동일한 EDP의 부향률과 원료를<br>사용한 2개의 향수가 있습니다.</p>
+                          <img src="./img/perfume4.jpg" alt="perfume4" class="img-fluid">
+                          <p>보류성이 뛰어난 머스크의 함량이 더 많기 때문에<br>A제품이 지속력이 길 것을 예상할 수 있어요.</p>
+                          <p>동일한 부향률, 원료를 사용해요<br>원료의 함량비에 따라 향수마다<br>지속력의 차이가 생기게 됩니다.<br>그래서 동일한 EDP여도 지속력이 모두 다른 것이에요.</p>
+                          <p>둘째로, 동일한 향수인데<br>사람마다 지속력이 다르게 느껴지는 이유는<br>지속력에 대한 <mark style="background-color: rgb(255, 103, 103)">인지의 오류</mark>에 있어요.</p>
+                          <p>향수의 지속력은<br><strong>장소, 계절, 피부타입, 성별, 후각 민감도</strong>등에 따라<br>지속력이 다르게 느껴지게 됩니다.</p>
+                          <br>
+                          <strong>여러분들의 의견을 들려주세요</strong>
+                          <form id="commentForm">
+                            <div class="mb-3">
+                              <textarea class="form-control" id="commentContent" rows="1" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">댓글 작성</button>
+                          </form>
+                          <div id="commentList" class="mt-4">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>         
+        </div>
+
+        <div class="col text-center my-3">
+          <div class="card-hover shadow rounded p-3 perfume-modal-trigger">
+            <div id="info2">
+              <img src="./img/per.PNG" alt="이미지 2" width="220" class="pt-3 pb-2">
+              <h4 class="fw-bold mt-3">전문가들이 말하는<br> 향수 뿌리는 TIP</h4>
+              <p>I&Perfume 시리즈 #2</p>
+            </div>
+            <div class="perfume-info fw-bold">
+              <p><button id="heartButton2" class="btn btn-link text-danger"><i class="bi bi-heart"></i></button> : <span id="heartCount2">219</span></p>
+              <p>review : 0</p>
+            </div>
+          </div>
+          <div class="modal fade" id="perfumeModal2" tabindex="-1" role="dialog" aria-labelledby="perfumeModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md modal-blog" role="document">
+              <div class="modal-content py-2">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-4 fw-bold" id="perfumeModalLabel2">어디에 뿌려야 할지 고민이신가요?</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-5" style="overflow-y : auto;">
+                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner text-center justify-content-center align-items-center">
+                      <div class="carousel-item active d-flex align-items-center justify-content-center">
+                        <div class="p-3">
+                          <h5>조말론 여사님 - 브러쉬 사용</h5>
+                          <img src="./img/brush.PNG" alt="brush" class="img-fluid">
+                          <p>향수를 몸에 뿌린 뒤, <strong>브러쉬</strong>로 원하는 부위에 도포하기</p>
+                          <p><strong>브러쉬</strong>가 훌륭한 도구인 이유는<br>세게 문지르는 방식이 아니기 때문에<br>향기가 그대로 보존된 채로<br>자연스럽게 퍼지기 때문이라고 해요.</p>
+                          <br>
+                          <h5>메모 Founder - 정맥에 분사</h5>
+                          <img src="./img/neck.PNG" alt="neck" class="img-fluid">
+                          <p>목 양옆과 같은 정맥에 분사하기</p>
+                          <p>향수를 확산시키는 것은 <strong>열</strong>이고<br>정맥이 향수를 따뜻하게 만들어주니까 정맥에 뿌리는 것이 도움이 된다고 해요.</p>
+                          <br>
+                          <h5>조보이 CEO - 옷, 악세서리</h5>
+                          <img src="./img/clothes.PNG" alt="clothes" class="img-fluid">
+                          <p>피부가 아닌 옷이나 악세서리에 분사하기</p>
+                          <p>전통적으로 원래 <strong>옷</strong>과 <strong>악세서리</strong>에 뿌려 왔었는데<br>향수를 피부에 뿌리게 된 건 마케팅의 영향이 크다고 해요.</p>
+                          <img src="./img/suit.PNG" alt="suit" class="img-fluid">
+                          <p>재킷을 예시로<br>재킷 안쪽의 상단은 내가 향을 맡기 위해서 뿌리고<br>하단은 주변 사람들을 위해서 뿌려준다고 합니다.</p>
+                          <strong>여러분들의 의견을 들려주세요</strong>
+                          <form id="commentForm">
+                            <div class="mb-3">
+                              <textarea class="form-control" id="commentContent" rows="1" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">댓글 작성</button>
+                          </form>
+                          <div id="commentList" class="mt-4">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>         
+        </div>
+        <div class="col text-center my-3">
+          <div class="card-hover shadow rounded p-3 perfume-modal-trigger">
+            <div id="info3">
+              <p>I&Perfume 시리즈 #3</p>
+            </div>
+          </div>
+          <div class="modal fade" id="perfumeModal3" tabindex="-1" role="dialog" aria-labelledby="perfumeModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md modal-blog" role="document">
+              <div class="modal-content py-2">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-4 fw-bold" id="perfumeModalLabel3"></h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-5" style="overflow-y : auto;">
+                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner text-center justify-content-center align-items-center">
+                      <div class="carousel-item active d-flex align-items-center justify-content-center">
+                        <div class="p-3">
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <strong>여러분들의 의견을 들려주세요</strong>
+                          <form id="commentForm">
+                            <div class="mb-3">
+                              <textarea class="form-control" id="commentContent" rows="1" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">댓글 작성</button>
+                          </form>
+                          <div id="commentList" class="mt-4">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>         
+        </div>
+      </div>
+    </div>
+    <!-- 메인 끝 -->
+
+    <!-- 풋터 시작 -->
+    <footer class = "bg-light py-3">
+        <div class = "container-fluid">
+            <div class = "row">
+              <div class = "col-12 col-md-4 d-flex text-center justify-content-center">
+                <div class = "p-2">
+                  <p>instagram</p>
+                  <a href="http://www.instagram.com/" target="_blank" class = "btn btn-light fs-1"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class = "p-2">
+                  <p>Facebook</p>
+                  <a href="http://www.facebook.com/" target="_blank" class = "btn btn-light fs-1"><i class="bi bi-facebook"></i></a>
+                </div>
+                <div class = "p-2">
+                  <p>Youtube</p>
+                  <a href="http://www.youtube.com/" target="_blank" class = "btn btn-light fs-1"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+              <div class = "col-9 col-md-4 mt-4 text-center">
+                <p>jeho4318@gmail.com</p>
+                <h4>ⓒ ALL RIGHT RESERVED BY I&Perfume</h4>
+              </div>
+              <div class = "col-1 col-md-4 mt-4 text-end">
+                <img src="./img/logo.png" alt="logo">
+              </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 풋터 끝 -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        // 각 모달 창을 클릭하여 모달 닫기
+        $('.modal').click(function(){
+          $(this).modal('hide');
+        });
+    
+        // 첫 번째 카드 모달 열기
+        $('#info1').click(function(e){
+          e.stopPropagation(); 
+          $('#perfumeModal').modal('show');
+        });
+    
+        // 두 번째 카드 모달 열기
+        $('#info2').click(function(e){
+          e.stopPropagation(); 
+          $('#perfumeModal2').modal('show');
+        });
+    
+        // 각 모달 창의 닫기 버튼 클릭 시 모달 닫기
+        $('.modal-header .btn-close').click(function(){
+          $(this).closest('.modal').modal('hide');
+        });
+      });
+    </script>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>

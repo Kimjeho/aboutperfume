@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I&Perfume</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- 네비게이션 시작 -->
+    <nav class="navbar navbar-expand-lg narbar-light py-2">
+      <div class="container-fluid">
+          <div class="col-md-4 col-1 text-start mt-5">
+              <a class="navbar-brand" href="index.html">
+                  <img src="./img/logo.png" alt="logo" id="logo">
+              </a>
+          </div>
+          <div class="col-md-4 col-8 text-center mt-5">
+              <a class="navbar-brand" href="index.html">
+                  <img src="./img/그림3.png" alt="name" class="img-fluid" id ="maindesign">
+              </a>
+          </div>
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto mb-2 mb-md-0 mt-3">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link members dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Member</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="login.html">Log in</a></li>
+                          <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link community" href="community.html">Community</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- 네비게이션 끝 -->
+
+    <!-- 헤더 시작 -->
+    <header>
+      <button onclick="scrollToTop()" id="scrollToTop">UP↑</button>
+      <script>
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollToTop").style.display = "block";
+            } else {
+                document.getElementById("scrollToTop").style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+      </script>
+      <div id="video">
+          <video width="100%" height="auto" autoplay loop muted>
+              <source src="./img/perfumer.mp4" type="video/mp4">
+          </video>
+      </div>
+    </header>
+    <!-- 헤더 끝 -->
+
+    <!-- 메인 시작 -->
+    <section class = "container py-5" id = "about-perfume">
+        <!-- 향수에 대한 설명 -->
+        <div class = "row justify-content-center align-items-center">
+            <div class = "col-md-4 order-md-1 text-center m-5 rounded p-3" id="perfume_text">
+                <h2>향수</h2>
+                <br>
+                <p>Per(~통하여) + Fumme(연기)</p>
+                <p>라틴어 Per Fumme(Through smoke)에서 유래하며, 향기가 나는 나무나 풀 등을 태워 향을 낸 것에서 시작되었고, 종교적인 의식에 신과 인간의 교감 매개체로도 사용되었습니다.</p>
+                <p>현대의 의미는 향료 + 알코올 등이 섞인 향기를 몸에 뿌리는 제품과 제형을 말하며, 농도에 따라 여러 가지로 나뉩니다.</p>
+                <br>
+                <table border="1" class = "mx-auto text-center">
+                  <thead>
+                    <th>종류</th>
+                    <th>부향률(향료%)</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Perfume</th>
+                      <td>15 ~ 30 %</td>
+                    </tr>
+                    <tr>
+                      <th>Eau de perfume</th>
+                      <td>9 ~ 14 %</td>
+                    </tr>
+                    <tr>
+                      <th>Eau de Toilette</th>
+                      <td>6 ~ 8 %</td>
+                    </tr>
+                    <tr>
+                      <th>Eau de colongne</th>
+                      <td>3 ~ 5 %</td>
+                    </tr>
+                    <tr>
+                      <th>Shower colongne</th>
+                      <td>2 ~ 3 %</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            <div class = "col-md-7 order-md-2 px-lg-5" id="perfume_pics">
+              <div id="maincarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/hans-vivek-nKhWFgcUtdk-unsplash.jpg" class="d-block w-100" alt="pics">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/perfume-1794111_1280.jpg" class="d-block w-100" alt="pics">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/fragonard-1007437_1280.jpg" class="d-block w-100" alt="pics">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/perfume-2142817_1280.jpg" class="d-block w-100" alt="pics">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/safe-3635196_1280.jpg" class="d-block w-100" alt="pics">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#maincarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#maincarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+        </div> 
+        
+        <!-- information -->
+        
+        <div class = "py-5">
+            <div class = "row">
+                <!-- 관능검사 -->
+                <div class = "col-sm-6">
+                    <div class = "card-hover shadow rounded p-3">
+                        <h3 class = "fw-bold my-4 text-center">관능 검사</h3>
+                        <div class="accordion" id="sensoryevaluation">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSensoryOne" aria-expanded="true" aria-controls="collapseSensoryOne">
+                                관능검사란?
+                              </button>
+                            </h2>
+                            <div id="collapseSensoryOne" class="accordion-collapse collapse" data-bs-parent="#sensoryevaluation">
+                              <div class="accordion-body">
+                                <p>Sensory Test라고 하며, Sensory Evaluation, sensory Inspection이라고도 합니다. 관능 검사는 코로 향기를 맡고, 이 향이 어떠한지에 대한 객관적인 결론을 내리는 과정 중 하나입니다.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSensoryTwo" aria-expanded="false" aria-controls="collapseSensoryTwo">
+                                검사실 조건
+                              </button>
+                            </h2>
+                            <div id="collapseSensoryTwo" class="accordion-collapse collapse" data-bs-parent="#sensoryevaluation">
+                              <div class="accordion-body">
+                                <ul>
+                                  <li>온도 : 21 ~ 22°C</li>
+                                  <li>습도 : 60 ~ 65%</li>
+                                  <li>배기 상태 : 양호</li>
+                                  <li>조명 150 lux</li>
+                                  <li>조용하고 신선한 도서관 같은 분위기</li>
+                                  <li>깨끗한 책상과 하얀색 벽</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSensoryThree" aria-expanded="false" aria-controls="collapseSensoryThree">
+                                방법
+                              </button>
+                            </h2>
+                            <div id="collapseSensoryThree" class="accordion-collapse collapse" data-bs-parent="#sensoryevaluation">
+                              <div class="accordion-body">
+                                <img src="./img/fulvio-ciccolo-ypMSMLtzKbE-unsplash.jpg" alt="img" class = "img-fluid">
+                                <p>향료는 Blotter라는 스케치북 종이보다는 조금 두꺼운 정도의 종이의 끝에 0.8 ~ 1cm 찍어서 코와 1 ~ 1.5cm의 거리를 두고 살이 닿지 않게 관능을 합니다. 시선은 고정된 곳 없이 향에 집중하여야 하고, 많은 생각은 하지 않도록 합니다.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 기본 구조 -->
+                <div class = "col-sm-6">
+                    <div class = "card-hover shadow rounded p-3">
+                        <h3 class = "fw-bold my-4 text-center">기본 구조</h3>
+                        <div class="accordion" id="note">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNoteOne" aria-expanded="true" aria-controls="collapseNoteOne">
+                                Top Note
+                              </button>
+                            </h2>
+                            <div id="collapseNoteOne" class="accordion-collapse collapse" data-bs-parent="#note">
+                              <div class="accordion-body">
+                                <p>탑 노트는 향수가 발향됐을 때 가장 처음 맡을 수 있는 향기입니다. Head Note라고도 하는데, 향수의 첫 인상을 남겨주는 노트이기 때문에, 새로운 향수를 시향 했을 때 호불호가 갈리는 가장 큰 이유입니다. </p>
+                                <p>세 가지 노트들 중에서 가장 큰 휘발성을 가지기 때문에 평균적으로 탑 노트의 향기는 10분 ~ 20분 정도로 지속력이 낮습니다. 주로 시트러스 계열(레몬, 오렌지, 라임)의 향이나 프루티(사과, 바나나 등), 또는 그린 계열처럼 주로 상쾌한 느낌을 주는 향이 많이 사용됩니다.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNoteTwo" aria-expanded="false" aria-controls="collapseNoteTwo">
+                                Middle Note
+                              </button>
+                            </h2>
+                            <div id="collapseNoteTwo" class="accordion-collapse collapse" data-bs-parent="#note">
+                              <div class="accordion-body">
+                                <p>첫 인상의 탑 노트가 발향되어 사라지고 난 후에 그 다음으로, 혹은 탑 노트와 겹쳐서 맡을 수 있는 향기입니다. 향수의 중심을 잡으면서 그 향수의 색깔을 나타내는 노트라고 볼 수 있습니다. 보통 향수를 발향 시킨 후 20 ~ 30분이 지나면 나타나는 향기입니다.</p>
+                                <p>미들 노트에 주로 사용되는 향은 플로럴 계열의 꽃 향기가 많습니다. 꽃 향기 외에도 카모마일 등의 쿠마린 계열의 향이나 향신료를 떠올리는 스파이시 향 등이 사용되기도 합니다.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNoteThree" aria-expanded="false" aria-controls="collapseNoteThree">
+                                Base Note
+                              </button>
+                            </h2>
+                            <div id="collapseNoteThree" class="accordion-collapse collapse" data-bs-parent="#note">
+                              <div class="accordion-body">
+                                <p>Last Note라고도 불리는 베이스 노트는 흔히들 말하는 잔향이라고 보시면 됩니다. 탑 노트와 미들 노트가 발향되어 날아간 후 평균적으로 3시간 전후부터 느낄 수 있는 향기입니다.</p>
+                                <p>휘발성이 가장 낮고 보류성이 가장 높은 특성을 가지고 있기 때문에 우리 몸에 가장 오래 머무르는 향기입니다. 베이스 노트에 사용되는 향은 같은 향료를 사용하더라도 그 향수를 사용하는 사람의 본래 체취와 체온에 따라 전혀 다른 향으로 나타나기도 합니다.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 계열 -->
+                <div class = "col-sm-6 py-4">
+                    <div class = "card-hover shadow rounded p-1">
+                        <h3 class = "fw-bold my-4 text-center">계열</h3>
+                        <div class="accordion" id="aff">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseaffOne" aria-expanded="true" aria-controls="collapseaffOne">
+                                  Floral
+                              </button>
+                            </h2>
+                            <div id="collapseaffOne" class="accordion-collapse collapse" data-bs-parent="#aff">
+                              <div class="accordion-body">
+                                <img src="./img/flowers.jpg" alt="aff1" class = "img-fluid">
+                                <p class="card-text">Floral note는 꽃 향기를 말하며, 부드럽고 여성스러운 향취를 가지고 있습니다. 1가지 꽃 향기인 Rose, Jasmin, Muguet 등의 단일 꽃 냄새는 Single Floral note로 말할 수 있고, Floral Bouquet은 Floral note의 꽃 향기를 2가지 이상 조합하여 Citrus, Fruity, Woody, spicy, Animalic note 등 새로운 노트들의 추가로 다채롭고 조화롭게 조향합니다.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseaffTwo" aria-expanded="false" aria-controls="collapseaffTwo">
+                                  Citrus
+                              </button>
+                            </h2>
+                            <div id="collapseaffTwo" class="accordion-collapse collapse" data-bs-parent="#aff">
+                              <div class="accordion-body">
+                                <img src="./img/brooke-lark-YSA1IRkGAsg-unsplash.jpg" alt="aff2" class = "img-fluid">
+                                <p>감귤계 과일의 껍질에서 수득한 오일은 상쾌하고, 가벼운 향취를 가집니다. 천연오일은 D-Limonene을 주성분으로 거의 모든 향조의 Top-note 형성에 이용됩니다.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseaffThree" aria-expanded="false" aria-controls="collapseaffThree">
+                                  Woody
+                              </button>
+                            </h2>
+                            <div id="collapseaffThree" class="accordion-collapse collapse" data-bs-parent="#aff">
+                              <div class="accordion-body">
+                                <img src="./img/forest.jpg" alt="aff3" class = "img-fluid">
+                                <p>나무 같은 향기를 갖는 향조를 Woody note라고 하며, 경우에 따라 Moss류도 Woody note에 포함시키기도 합니다. 각종 향료의 Base note 구성에 중요한 향조입니다.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseaffFour" aria-expanded="false" aria-controls="collapseaffFour">
+                                  Oriental
+                              </button>
+                            </h2>
+                            <div id="collapseaffFour" class="accordion-collapse collapse" data-bs-parent="#aff">
+                              <div class="accordion-body">
+                                <img src="./img/kier-in-sight-archives-57BCZzL2t8E-unsplash.jpg" alt="aff4" class ="img-fluid">
+                                <p>동양조의 향기라고도 하며 Sweet powdery하면서 Animalic한 냄새를 배경에 두고, Warm, Spicy, Balsamic, Woody등의 조향으로 중후하고 감미로움을 가득 채운 관능적인 향기입니다.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseaffFive" aria-expanded="false" aria-controls="collapseaffFive">
+                                  etc
+                              </button>
+                            </h2>
+                            <div id="collapseaffFive" class="accordion-collapse collapse" data-bs-parent="#aff">
+                              <div class="accordion-body">
+                                <img src="./img/fruits.jpg" alt="aff5" class = "img-fluid">
+                                <p>이외에도 과일 향기의 Fruity note, Spice(향신료)가 메인인 Spicy note, 동물성 향료 중 하나인 Musky note, 이끼 느낌의 Mossy note 등이 있습니다. 현재 Musky note는 생산되지 않아 케미컬 향료로 대체하여 사용하고 있습니다. </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color -->
+                <div class = "col-sm-6 pt-4">
+                    <div class = "card-hover shadow rounded p-1" id = "color">
+                        <h3 class = "fw-bold my-3 text-center">Color</h3>
+                        <div class= "row pb-1">
+                          <div class = "col-6 text-center">
+                            <div class = "p-1" id="black">
+                              <button  type="button"  class = "btn" data-bs-toggle="modal" data-bs-target="#blackModal">BLACK</button>
+                              <div class="modal fade" id="blackModal" tabindex="-1" aria-labelledby="blackModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-4 fw-bold" id="blackModalLabel">BLACK</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/c.black_1.jpg" alt="black" class = "img-fluid">
+                                        <img src="./img/c.black_2.jpg" alt="black" class = "img-fluid">
+                                        <p class="text-black">Black 컬러는 남성적, 강렬함, 깔끔, 이성적, 관능적인 느낌을 가지고 있습니다.</p>     
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class = "col-6 text-center">
+                            <div class = "p-1" id="orange">
+                              <button  type="button" class = "btn" data-bs-toggle="modal" data-bs-target="#orangeModal">ORANGE</button>
+                              <div class="modal fade" id="orangeModal" tabindex="-1" aria-labelledby="orangeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-4 fw-bold" id="orangeModalLabel">ORANGE</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/c.orange_1.jpg" alt="orange" class = "img-fluid">
+                                        <img src="./img/c.Orange_2.jpg" alt="ornage" class = "img-fluid">
+                                        <p class="text-black">Orange 컬러는 Sweet, 젊음과 생기, 즐거움, 에너지, 따듯함을 가지고 있습니다.</p>     
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class = "col-6 gap-1 text-center">
+                            <div class= "p-1" id="blue">
+                              <button  type="button" class = "btn" data-bs-toggle="modal" data-bs-target="#blueModal">BLUE</button>
+                              <div class="modal fade" id="blueModal" tabindex="-1" aria-labelledby="blueModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-4 fw-bold" id="blueModalLabel">BLUE</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/c.blue_1.jpg" alt="blue" class = "img-fluid">
+                                        <img src="./img/c.blue_2.jpg" alt="blue" class = "img-fluid">
+                                        <p class="text-black">Blue 컬러는 Cool, Fresh, 편안함, 믿음, 깊은 바다, Cold, Ozonic의 느낌을 가지고 있습니다.</p>     
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class = "col-6 gap-1 text-center">
+                            <div class= "p-1" id="pink">
+                              <button  type="button" class = "btn" data-bs-toggle="modal" data-bs-target="#pinkModal">PINK</button>
+                              <div class="modal fade" id="pinkModal" tabindex="-1" aria-labelledby="pinkModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-4 fw-bold" id="pinkModalLabel">PINK</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/c.pink_1.jpg" alt="pink" class = "img-fluid">
+                                        <img src="./img/c.pink_2.jpg" alt="pink" class = "img-fluid">
+                                        <p class="text-black">Pink 컬러는 Grapefruit, Peach, 봄, 수줍음, 설렘, 첫사랑, Pink rose의 느낌을 가지고 있습니다.</p>     
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class = "col-6 gap-1 text-center">
+                            <div class= "p-1" id="brown">
+                              <button  type="button" class = "btn" data-bs-toggle="modal" data-bs-target="#brownModal">BROWN</button>
+                              <div class="modal fade" id="brownModal" tabindex="-1" aria-labelledby="brownModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-4 fw-bold" id="brownModalLabel">BROWN</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/c.brown_1.jpg" alt="brown" class = "img-fluid">
+                                        <img src="./img/c.brown_2.jpg" alt="brown" class = "img-fluid">
+                                        <p class="text-black">Brown 컬러는 Amber, Cinamon, Oriental, Dry, 커피, 낙엽, 가을의 느낌을 가지고 있습니다.</p>     
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class = "col-6 gap-1 text-center">
+                            <div class= "p-1" id="violet">
+                              <button  type="button" class = "btn" data-bs-toggle="modal" data-bs-target="#violetModal">VIOLET</button>
+                              <div class="modal fade" id="violetModal" tabindex="-1" aria-labelledby="violetModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-4 fw-bold" id="violetModalLabel">VIOLET</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/c.purple_1.jpg" alt="violet" class = "img-fluid">
+                                        <img src="./img/c.purple_2.jpg" alt="violet" class = "img-fluid">
+                                        <img src="./img/c.purple_3.jpg" alt="violet" class = "img-fluid">
+                                        <p class="text-black">Violet 컬러는 라벤더, Violet floral, Iris, Powdery floral, 벨벳, 귀족, 관능적인 느낌을 가지고 있습니다.</p>     
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class = "col-6 gap-1 text-center">
+                            <div class= "p-1" id="green">
+                              <button  type="button" class = "btn" data-bs-toggle="modal" data-bs-target="#greenModal">GREEN</button>
+                              <div class="modal fade" id="greenModal" tabindex="-1" aria-labelledby="greenModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-4 fw-bold" id="greenModalLabel">GREEN</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/c.green_1.jpg" alt="green" class = "img-fluid">
+                                        <img src="./img/c.green_2.jpg" alt="green" class = "img-fluid">
+                                        <p class="text-black">green 컬러는 Herbal, Minty, 숲, 여름, 풀, 청춘, 시작, 신선함의 느낌을 가지고 있습니다.</p>     
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class = "col-6 gap-1 text-center">
+                            <div class= "p-1" id="red">
+                              <button  type="button" class = "btn" data-bs-toggle="modal" data-bs-target="#redModal">RED</button>
+                              <div class="modal fade" id="redModal" tabindex="-1" aria-labelledby="redModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-4 fw-bold" id="redModalLabel">RED</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/c.red_1.jpg" alt="red" class = "img-fluid">
+                                        <img src="./img/c.red_2.jpg" alt="red" class = "img-fluid">
+                                        <p class="text-black">Red 컬러는 사과, 딸기, 사랑, 장미, 카네이션, 열정, 관능미의 느낌을 가지고 있습니다.</p>     
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class = "col-6 gap-1 text-center">
+                            <div class= "p-1" id="grey">
+                              <button  type="button" class = "btn" data-bs-toggle="modal" data-bs-target="#greyModal">GREY</button>
+                              <div class="modal fade" id="greyModal" tabindex="-1" aria-labelledby="greyModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-4 fw-bold" id="greyModalLabel">GREY</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/c.grey_1.jpg" alt="grey" class = "img-fluid">
+                                        <img src="./img/c.grey_2.jpg" alt="grey" class = "img-fluid">
+                                        <p class="text-black">Grey 컬러는 슬픔과 차분함, Metalic, 흐린날의 느낌을 가지고 있습니다.</p>     
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class = "col-6 gap-1 text-center">
+                            <div class= "p-1" id="white">
+                              <button  type="button" class = "btn" data-bs-toggle="modal" data-bs-target="#whiteModal">WHITE</button>
+                              <div class="modal fade" id="whiteModal" tabindex="-1" aria-labelledby="whiteModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-4 fw-bold" id="whiteModalLabel">WHITE</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/c.white_1.jpg" alt="white" class = "img-fluid">
+                                        <img src="./img/c.white_3.jpg" alt="white" class = "img-fluid">
+                                        <p class="text-black">White 컬러는 Powder, musk, Aldehydic, 신부, 고귀함, 깨끗한 느낌을 가지고 있습니다.</p>     
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class = "col-6 gap-1 text-center">
+                            <div class= "p-1"></div>
+                          </div>
+                          <div class = "col-6 gap-1 text-center">
+                            <div class= "p-1" id="yellow">
+                              <button  type="button" class = "btn" data-bs-toggle="modal" data-bs-target="#yellowModal">YELLOW</button>
+                              <div class="modal fade" id="yellowModal" tabindex="-1" aria-labelledby="yellowModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-4 fw-bold" id="yellowModalLabel">YELLOW</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/c.yellow_1.jpg" alt="yellow" class = "img-fluid">
+                                        <img src="./img/c.yellow_2.jpg" alt="yellow" class = "img-fluid">
+                                        <p class="text-black">Yellow 컬러는 Ylang ylang, 바닐라, 바나나, Sweet, 레몬, 어린아이, 귀여움, 상큼함의 느낌을 가지고 있습니다.</p>     
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 메인 끝 -->
+
+    <!-- 풋터 시작 -->
+    <footer class = "bg-light py-3">
+        <div class = "container-fluid">
+            <div class = "row">
+              <div class = "col-12 col-md-4 d-flex text-center justify-content-center">
+                <div class = "p-2">
+                  <p>instagram</p>
+                  <a href="http://www.instagram.com/" target="_blank" class = "btn btn-light fs-1"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class = "p-2">
+                  <p>Facebook</p>
+                  <a href="http://www.facebook.com/" target="_blank" class = "btn btn-light fs-1"><i class="bi bi-facebook"></i></a>
+                </div>
+                <div class = "p-2">
+                  <p>Youtube</p>
+                  <a href="http://www.youtube.com/" target="_blank" class = "btn btn-light fs-1"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+              <div class = "col-9 col-md-4 mt-4 text-center">
+                <p>jeho4318@gmail.com</p>
+                <h4>ⓒ ALL RIGHT RESERVED BY I&Perfume</h4>
+              </div>
+              <div class = "col-1 col-md-4 mt-4 text-end">
+                <img src="./img/logo.png" alt="logo">
+              </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 풋터 끝 -->
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>

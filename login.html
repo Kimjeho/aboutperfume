@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        .form-container {
+            margin-top: 100px;
+        }
+
+        .form-container label {
+            display: inline-block;
+            width: 60px; 
+            text-align: right; 
+            margin-right: 20px;
+        }
+
+        .hidden-input {
+        border: none;
+        outline: none;
+        background: none;
+        color: inherit;
+        font-size: inherit;
+        width: 100%;
+        text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .hide-on-large {
+                display: none;
+            }
+        }
+        
+        .divider {
+        border-top: 1px solid #ccc;
+        margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션 시작 -->
+    <nav class="navbar navbar-expand-lg narbar-light py-2">
+        <div class="container-fluid">
+            <div class="col-md-4 col-1 text-start mt-5">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.png" alt="logo" id="logo">
+                </a>
+            </div>
+            <div class="col-md-4 col-8 text-center mt-5">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/그림3.png" alt="name" class="img-fluid" id ="maindesign">
+                </a>
+            </div>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0 mt-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link members dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Member</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html">Log in</a></li>
+                            <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link community" href="community.html">Community</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 네비게이션 끝 -->
+
+    <!-- 메인 시작 -->
+    <div class="container py-5 mt-5 p-5">
+        <div class="row justify-content-center align-items-center">
+            <!-- 로그인창 -->
+            <div class="col-md-6 col-12 py-1 order-md-2 order-2 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-12 mb-5 text-center">
+                        <h4 style="white-space: nowrap;">로그인하고 더 많은 정보를 얻으세요!</h4><br>
+                        <img src="./img/bottle-2812214_1280.jpg" alt="bottle" class = "img-fluid">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-12">
+                        <!-- <h2 class="text-center my-4">Log in</h2> -->
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control hidden-input" placeholder="ID" required>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="form-group">
+                                <input type="password" class="form-control hidden-input" placeholder="Password" required>
+                            </div>
+                            <div class="text-center pt-3">
+                                <button type="submit" class="btn btn-block fw-bold" style="font-size: 25px">Log in</button>
+                                <button type="reset" class="btn btn-block" style="font-size: 18px">Cancel</button>
+                            </div>
+                        </form>
+                        <div class="text-center mt-1" style="font-size: 12px";>
+                            <a href="signup.html">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 메인 끝 -->
+
+    <!-- 풋터 시작 -->
+    <footer class = "bg-light py-3">
+        <div class = "container-fluid">
+            <div class = "row">
+              <div class = "col-12 col-md-4 d-flex text-center justify-content-center">
+                <div class = "p-2">
+                  <p>instagram</p>
+                  <a href="http://www.instagram.com/" target="_blank" class = "btn btn-light fs-1"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class = "p-2">
+                  <p>Facebook</p>
+                  <a href="http://www.facebook.com/" target="_blank" class = "btn btn-light fs-1"><i class="bi bi-facebook"></i></a>
+                </div>
+                <div class = "p-2">
+                  <p>Youtube</p>
+                  <a href="http://www.youtube.com/" target="_blank" class = "btn btn-light fs-1"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+              <div class = "col-9 col-md-4 mt-4 text-center">
+                <p>jeho4318@gmail.com</p>
+                <h4>ⓒ ALL RIGHT RESERVED BY I&Perfume</h4>
+              </div>
+              <div class = "col-1 col-md-4 mt-4 text-end">
+                <img src="./img/logo.png" alt="logo">
+              </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 풋터 끝 -->
+
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
